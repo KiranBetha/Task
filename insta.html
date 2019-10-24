@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Instagram Like & Dislike</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            h1{
+                color: #000000;
+                text-align: center;
+                font-size: xx-large;
+            }
+            .img{
+                height: 250px;
+            }
+            body{
+                background-image: url(bg2.web);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1>Welcome to Instagam</h1>
+        <div>
+            <center style="font-size: 30px;">
+                <img class="img" src="pspk.jfif"><br><br>
+            <i onclick="like()" ondblclick="dislike()" class="fa fa-heart" id="color" style="font-size: 100px;"></i>
+                <br><br>
+            <button>Likes&nbsp;<span id="like">0</span></button> &nbsp;&nbsp;<button>Dislikes&nbsp;<span id="dislike">0</span></button>
+                 
+            </center>
+        </div>
+        <script>
+            var likes=0;
+            var dislikes=0;
+
+            function like(){
+                likes=likes+1;
+                document.getElementById('like').innerHTML=likes;
+                document.getElementById('color').style.color="red";
+            }
+            function dislike(){
+                dislikes=dislikes+1;
+                document.getElementById('dislike').innerHTML=dislikes;
+                document.getElementById('color').style.color="black";
+            }
+        </script>
+        
+    </body>
+</html>

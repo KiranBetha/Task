@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Facebook Like & Dislike</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+       <center><h1>Welcome to Facebook</h1></center><br>
+        <div>
+            <center><i class="fa fa-facebook-square" arial="true" style="font-size: 30px;">&nbsp;Facebook</i></center>
+            <center><img src="fb.png" type="image.png" width="30%" height="50%"><br><br>
+                <button>Likes &nbsp; <i onclick="like()" id="color" class="fa fa-thumbs-up"></i></button> <span id="like" >0</span>   &nbsp;&nbsp;&nbsp;&nbsp;  
+                <button>Dislikes &nbsp; <i  onclick="dislike()" id="color2" class="fa fa-thumbs-down"></i></button> <span id="dislike">0</span>
+           <br><br>
+          
+            </center>
+        </div>
+        <script> 
+            var likes=0;
+            var dislikes=0;
+
+            function like(){
+                likes=likes+1;
+                document.getElementById('like').innerHTML=likes;
+                document.getElementById('color').style.color="blue";
+            }
+            function dislike(){
+                dislikes=dislikes+1;
+                document.getElementById('dislike').innerHTML=dislikes;
+                document.getElementById('color2').style.color="red";
+            }
+        </script>
+        
+    </body>
+</html>
